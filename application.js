@@ -19,11 +19,15 @@ $(document).ready(function() {
 	});
 
 	// Initialize table
-	$('#tools-table').DataTable( {
+	var table = $('#tools-table').DataTable( {
         "paging": false,
         "info": false,
-    } );
+    });
 
+	// Use Materialize search box
+  	$('#search-tool').on('input propertychange paste', function() {
+  		table.search($(this).val()).draw();
+  	});
 });
 
 // Update the table with search results

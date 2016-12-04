@@ -26,3 +26,7 @@ footer.page-footer {
 	margin-top: 20px;
 	margin-left: 25px;
 }
+
+#tools-table_filter {
+	display: none;
+}
