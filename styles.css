@@ -1,0 +1,23 @@
+.margin-top-10 {
+	margin-top: 10px;
+}
+
+.margin-top-15 {
+	margin-top: 15px;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
+}
+
+.margin-top-30 {
+	margin-top: 30px;
+}
+
+.parallax-container#parallax-1 {
+  height: 500px;
+}
+
+footer.page-footer {
+	padding-top: 0px !important;
+}
