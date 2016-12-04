@@ -9,6 +9,9 @@
 		<!--Import materialize.css-->
 		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" media="screen,projection">
 
+		<!-- Import DataTables styles -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
+
 		<!-- Import custom application styles -->
 		<link type="text/css" rel="stylesheet" href="styles.css" media="screen,projection"/>
 
@@ -64,31 +67,57 @@
 								<i class="material-icons">arrow_drop_down_circle</i>Filter by features
 							</div>
 							<div class="collapsible-body">
-								<p>
-									<input type="checkbox" id="free" />
-									<label for="free">Free account</label>
-							    </p>
-							    <p>
-									<input type="checkbox" id="easy" />
-									<label for="easy">Easy to use</label>
-							    </p>
-							    <p>
-									<input type="checkbox" id="data" />
-									<label for="data">Data analysis</label>
-							    </p>
+								<div class="row">
+									<div class="col s4">
+										<input type="checkbox" id="free" />
+										<label for="free">Free account</label>
+										<input type="checkbox" id="easy" />
+										<label for="easy">Easy to use</label>
+										<input type="checkbox" id="data" />
+										<label for="data">Data analysis</label>
+										<input type="checkbox" id="templates" />
+										<label for="templates">Survey templates</label>
+								    </div>
+
+								    <div class="col s4">
+										<input type="checkbox" id="question" />
+										<label for="question">Question bank</label>
+										<input type="checkbox" id="collaboration" />
+										<label for="collaboration">Collaboration tools</label>
+										<input type="checkbox" id="passwords" />
+										<label for="passwords">Supports passwords</label>
+										<input type="checkbox" id="timers" />
+										<label for="timers">Supports timers</label>
+								    </div>
+
+								    <div class="col s4">
+								    	<input type="checkbox" id="matrix" />
+										<label for="matrix">Matrix questions</label>
+										<input type="checkbox" id="test" />
+										<label for="test">Generates test data</label>
+										<input type="checkbox" id="reminders" />
+										<label for="reminders">Sends reminders</label>
+										<input type="checkbox" id="social" />
+										<label for="social">Social media integration</label>
+										
+								    </div>
+								</div>
 							</div>
 						</li>
 					</ul>
 
 					<form class="col s12">
 				      <div class="row">
-				        <div class="input-field col s6">
+				        <div class="input-field col s12">
 				          <i class="material-icons prefix">search</i>
 				          <input id="icon_prefix" type="text" class="validate">
-				          <label for="icon_prefix">Search</label>
+				          <label for="icon_prefix">Search for a survey tool</label>
 				        </div>
-				     
 				    </form>
+
+				    <div class="row">
+				    	
+				    </div>
 
 				</div>
 			</div>
@@ -98,6 +127,8 @@
 		<!--Import jQuery before materialize.js-->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+		<!-- Import DataTables -->
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
 		<!-- Import custom application javascript -->
 		<script type="text/javascript" src="application.js"></script>
 	</body>
