@@ -18,6 +18,12 @@ $(document).ready(function() {
 	    }, 1000);
 	});
 
+	// Initialize table
+	$('#tools-table').DataTable( {
+        "paging": false,
+        "info": false,
+    } );
+
 });
 
 // Update the table with search results

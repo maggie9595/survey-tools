@@ -2,3 +2,4 @@ My project is similar to the Cooper.com comparison of prototyping tools, but for
 
 External libraries used:
 - Materialize CSS framework (http://materializecss.com/)
+- DataTables jQuery plugin (https://datatables.net/)
