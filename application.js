@@ -1,21 +1,23 @@
 $(document).ready(function() {
-	// Initialize select dropdown
-	$('select').material_select();
-
-	// Initialize tooltip for add task button
-	$('.tooltipped').tooltip({delay: 30});
-
 	// Initialize parallax
 	$('.parallax').parallax();
 
 	// Initialize collapsibles
 	$('.collapsible').collapsible();
 
+	// Initialize tooltips
+	$('.tooltipped').tooltip({delay: 40, html: true});
+
 	// Get started button scroll
 	$("#get-started").click(function() {
 	    $('html, body').animate({
 	        scrollTop: $("#features").offset().top
 	    }, 1000);
+	});
+
+	// Refresh page to clear filters
+	$('#clear-filters').click(function() {
+	    location.reload();
 	});
 
 	// Initialize table
