@@ -37,6 +37,14 @@ $(document).ready(function() {
 
   		if (id == "easy") {
   			column = 2;
+  		} else if (id == "data") {
+  			column = 3;
+  		} else if (id == "templates") {
+  			column = 4;
+  		} else if (id == "question") {
+  			column = 5;
+  		} else if (id == "collaboration") {
+  			column = 6;
   		}
 
   		if (this.checked) {
@@ -46,14 +54,15 @@ $(document).ready(function() {
   		}
   	});
 
-  	// Update the table with filtering options
+  	// Update the table to add the chosen filter
 	function addFilter(column) {
 		table
-		    .column(1)
+		    .column(column)
 		    .search("check_circle")
 		    .draw();
 	}
 
+	// Remove the chosen filter from the table
 	function removeFilter(column) {
 		table
 		    .column(column)
@@ -61,9 +70,3 @@ $(document).ready(function() {
 		    .draw();
 	}
 });
-
-
-// Show details about the selected survey tool
-function showDetails() {
-
-}
