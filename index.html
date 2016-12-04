@@ -71,10 +71,13 @@
 									<div class="col s4">
 										<input type="checkbox" id="free" />
 										<label for="free">Free account</label>
+										<br>
 										<input type="checkbox" id="easy" />
 										<label for="easy">Easy to use</label>
+										<br>
 										<input type="checkbox" id="data" />
 										<label for="data">Data analysis</label>
+										<br>
 										<input type="checkbox" id="templates" />
 										<label for="templates">Survey templates</label>
 								    </div>
@@ -82,10 +85,13 @@
 								    <div class="col s4">
 										<input type="checkbox" id="question" />
 										<label for="question">Question bank</label>
+										<br>
 										<input type="checkbox" id="collaboration" />
 										<label for="collaboration">Collaboration tools</label>
+										<br>
 										<input type="checkbox" id="passwords" />
 										<label for="passwords">Supports passwords</label>
+										<br>
 										<input type="checkbox" id="timers" />
 										<label for="timers">Supports timers</label>
 								    </div>
@@ -93,10 +99,13 @@
 								    <div class="col s4">
 								    	<input type="checkbox" id="matrix" />
 										<label for="matrix">Matrix features</label>
+										<br>
 										<input type="checkbox" id="test" />
 										<label for="test">Generates test data</label>
+										<br>
 										<input type="checkbox" id="reminders" />
 										<label for="reminders">Sends reminders</label>
+										<br>
 										<input type="checkbox" id="social" />
 										<label for="social">Social media integration</label>
 								    </div>
@@ -105,40 +114,96 @@
 						</li>
 					</ul>
 
-					<form class="col s12">
+					<br>
+
+					<div class="col s12">
 				      <div class="row">
 				        <div class="input-field col s12">
 				          <i class="material-icons prefix">search</i>
 				          <input id="search-tool" type="text" class="validate">
 				          <label for="search-tool">Search for a survey tool</label>
 				        </div>
-				    </form>
+				    </div>
+
+				    <br>
 
 				    <div class="row">
-						<table class="bordered" id="tools-table">
+						<table class="hover order-column" cellspacing="0" width="100%" id="tools-table">
 							<thead>
 								<tr>
-									<th data-field="id">Name</th>
-									<th data-field="name">Item Name</th>
-									<th data-field="price">Item Price</th>
+									<th data-field="name">Tool Name</th>
+									<th data-field="free">Free Account</th>
+									<th data-field="easy">Easy to Use</th>
+									<th data-field="data">Data Analysis</th>
+									<th data-field="templates">Templates</th>
+									<th data-field="question">Question Bank</th>
+									<th data-field="collaboration">Collaboration Tools</th>
 								</tr>
 							</thead>
 
 							<tbody>
 								<tr>
-									<td>Alvin</td>
-									<td>Eclair</td>
-									<td>$0.87</td>
+									<td data-field="SurveyMonkey"><img class="tool-icon" src="images/surveymonkey.jpg"><br><b>SurveyMonkey</b></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
 								</tr>
 								<tr>
-									<td>Alan</td>
-									<td>Jellybean</td>
-									<td>$3.76</td>
+									<td data-field="Google Forms"><img class="tool-icon" src="images/googleforms.jpg"><br><b>Google Forms</b></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="0"></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
 								</tr>
 								<tr>
-									<td>Jonathan</td>
-									<td>Lollipop</td>
-									<td>$7.00</td>
+									<td data-field="SurveyGizmo"><img class="tool-icon" src="images/sg.png"><br><b>SurveyGizmo</b></td>
+									<td data-sort="0"></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+								</tr>
+								<tr>
+									<td data-field="Qualtrics"><img class="tool-icon" src="images/qualtrics.png"><br><b>Qualtrics</b></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="0"></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+								</tr>
+								<tr>
+									<td data-field="Typeform"><img class="tool-icon" src="images/typeform.jpg"><br><b>Typeform</b></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="0"></td>
+								</tr>
+								<tr>
+									<td data-field="Checkbox Survey"><img class="tool-icon" src="images/checkbox.png"><br><b>Checkbox Survey</b></td>
+									<td data-sort="0"></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+								</tr>
+								<tr>
+									<td data-field="SoGoSurvey"><img class="tool-icon" src="images/sogo.jpg"><br><b>SoGoSurvey</b></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
+									<td data-sort="1"><i class="material-icons medium">check_circle</i></td>
 								</tr>
 							</tbody>
 						</table>

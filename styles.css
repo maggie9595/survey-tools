@@ -30,3 +30,12 @@ footer.page-footer {
 #tools-table_filter {
 	display: none;
 }
+
+#tools-table td {
+	text-align: center;
+}
+
+.tool-icon {
+	width: 100px;
+	border-radius: 0px;
+}
