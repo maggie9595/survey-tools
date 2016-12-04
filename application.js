@@ -24,38 +24,46 @@ $(document).ready(function() {
         "info": false,
     });
 
-	// Use Materialize search box
+	// Use Materialize search box to find survey tools with names matching user search input
   	$('#search-tool').on('input propertychange paste', function() {
+  		// Update the table with search results
   		table.search($(this).val()).draw();
   	});
+
+  	// Update the table with filtering options when user updates filters
+  	$('.collapsible input').on('change', function() {
+  		var id = this.id;
+  		var column = 0;
+
+  		if (id == "easy") {
+  			column = 1;
+  		}
+
+  		if (this.checked) {
+  			addFilter(column, 1);
+  		} else {
+  			removeFilter(column);
+  		}
+  	});
+
+  	// Update the table with filtering options
+	function addFilter(column, search) {
+		table
+		    .column(column)
+		    .search(search)
+		    .draw();
+	}
+
+	function removeFilter(column) {
+		table
+		    .column(column)
+		    .search("")
+		    .draw();
+	}
 });
 
-// Update the table with search results
-function updateSearchResults() {
-	// Find survey tools with names matching user search input
-}
-
-// Update the table with sorting options
-function updateSort() {
-	// Sort the selected column
-}
-
-// Update the table with filtering options
-function updateFilters() {
-	// Only show the survey tools with the selected features in the filtering list
-}
 
 // Show details about the selected survey tool
 function showDetails() {
-
-}
-
-// Add the selected survey tool to comparison list
-function addToComparison() {
-
-}
-
-// Show the comparison list with the survey tools currently added
-function showComparisonList() {
 
 }
