@@ -33,24 +33,24 @@ $(document).ready(function() {
   	// Update the table with filtering options when user updates filters
   	$('.collapsible input').on('change', function() {
   		var id = this.id;
-  		var column = 0;
+  		var column = 1;
 
   		if (id == "easy") {
-  			column = 1;
+  			column = 2;
   		}
 
   		if (this.checked) {
-  			addFilter(column, 1);
+  			addFilter(column);
   		} else {
   			removeFilter(column);
   		}
   	});
 
   	// Update the table with filtering options
-	function addFilter(column, search) {
+	function addFilter(column) {
 		table
-		    .column(column)
-		    .search(search)
+		    .column(1)
+		    .search("check_circle")
 		    .draw();
 	}
 
